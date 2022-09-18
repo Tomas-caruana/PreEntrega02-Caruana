@@ -20,62 +20,14 @@ header{
 }
 
 
-
-/*¨estilos menu index*/
-/*header nav.menu ul li a{
-    background-color: whitesmoke;
-    color: black;
-    list-style: none;
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 5px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+/* estilo navbar index*/
+header .container-fluid ul .nav-item .nav-link{
+    color: black !important;
 }
-
-header nav.menu ul li{
-    display: inline-block;
-    margin: 10px;
-} */
-
-header img{
-    background-color: white;
-    margin: 5px;
-    padding: 10px;
-    border-radius: 5px;
-    height: 60px;
-}
-
-/*estilos menu main*/
-main nav.menu2 ul li a{
-    padding: 10px;
-    list-style: none;
-    text-decoration: none;
-    color: black;
-    background-color: #277bc096;
-    border-radius: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-}
-main nav.menu2 ul li{
-    margin-top: 42rem;
-    margin-right: 20rem;
-    margin-left: 30rem;
-    display: inline-block;
-}
-
-
-
-
-
 
 /* estilos footer*/
 footer{
     background-color: #FF5D5D ;
-    text-align: center;
-    font-family:'Roboto', sans-serif;
-    font-size: 15px;
-    font-weight: bold;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -84,8 +36,11 @@ footer{
 }
 
 footer p{
+    margin-top: 30px;
     text-align: center;
-    margin-top: 10px;
+    font-family:'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 footer a{
