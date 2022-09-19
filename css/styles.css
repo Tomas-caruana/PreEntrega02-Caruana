@@ -27,8 +27,8 @@ header{
 
 
 /* estilo navbar index*/
-header .container-fluid ul .nav-item .nav-link{
-    color: black !important;
+header .navbar{
+    display: none;
 }
 
 /* estilos footer index*/
@@ -133,8 +133,69 @@ header div .menu-pages ul{
 
 /*estilos de main INICIO*/
 
-.main-inicio div img{
+.main-inicio div img{  
     height: 20vh;
 }
 
+.main-inicio div{
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/prueba1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.main-inicio .sobre-nosotros-inicio {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    grid-template-areas:
+    "video encabezado encabezado"
+    "video texto texto"
+    "video texto texto";
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px gray;
+    margin: 50px;
+    margin-top: 7rem;
+}
+
+.main-inicio section h1 {
+    grid-area: encabezado;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 1.8rem;
+    margin-right: 6rem;
+    margin-left: 1.4rem;
+    color: #3e3e3ed8;
+    letter-spacing: 1px;
+}
+
+.main-inicio section .video {
+    grid-area: video;
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+
+.main-inicio section .texto-sobre {
+    grid-area: texto;
+    font-family: 'Rubik', sans-serif;
+    padding: 1rem;
+    text-align: start;
+}
+
+.main-inicio a img{
+    height: 4.4rem;
+}
+.main-inicio a{
+    display: flex;
+    justify-content: end;
+    margin: 2.8rem;
+    position: sticky;
+    filter: drop-shadow(1px 2px 8px gray)
+}
+
+
+/*media queries*/
+@media screen and (min-width: 768px){
+    
+
+}
