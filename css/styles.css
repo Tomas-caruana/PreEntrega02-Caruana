@@ -200,6 +200,7 @@ header div .menu-pages ul{
 
 /*media queries*/
 @media screen and (max-width: 480px){
+    /*** media queries index ***/
     .body-index .navbar{
         display: block;
         background-color: #FF5D5D !important;
@@ -229,4 +230,7 @@ header div .menu-pages ul{
         justify-content: center;
         margin-top: 70%;
     }
+
+    /*** media queries inicio***/
+    
 }
