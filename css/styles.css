@@ -15,6 +15,10 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.body-index main{
+    display: none;
+}
+
 
 body{
     background-color:#FFF2F2 ;
@@ -195,7 +199,34 @@ header div .menu-pages ul{
 
 
 /*media queries*/
-@media screen and (min-width: 768px){
-    
+@media screen and (max-width: 480px){
+    .body-index .navbar{
+        display: block;
+        background-color: #FF5D5D !important;
+    }
+    .body-index header{
+        height: 60px;
+    }
+    header .menu-pages {
+        display: none;
+    }
 
+    header .logo-header{
+        display: none;
+    }
+    
+    .body-index{
+        background-image: none;
+    }
+
+    .body-index main .logo-pcelu img{
+        height: 6rem;
+    }
+
+    .body-index main{
+        display: block;
+        display: flex;
+        justify-content: center;
+        margin-top: 70%;
+    }
 }
