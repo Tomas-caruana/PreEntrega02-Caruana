@@ -115,9 +115,11 @@ header div .menu-pages ul{
 
 /* estilos footer pages*/
 .footer-pages{
+    color: #272727d8;
     font-family:'Roboto', sans-serif;
     display: flex;
     justify-content: space-around;
+    position: relative;
 }
 
 .footer-pages .redes-footer{
@@ -139,6 +141,10 @@ header div .menu-pages ul{
 
 .main-inicio div img{  
     height: 20vh;
+}
+
+.main-inicio div .foto-carrousel3{
+    display: none;
 }
 
 .main-inicio div{
@@ -184,17 +190,68 @@ header div .menu-pages ul{
     font-family: 'Rubik', sans-serif;
     padding: 1rem;
     text-align: start;
+    padding: 2.5rem;
+    padding-left: 1rem;
 }
 
 .main-inicio a img{
-    height: 4.4rem;
+    height: 4rem;
 }
-.main-inicio a{
-    display: flex;
-    justify-content: end;
-    margin: 2.8rem;
-    position: sticky;
+.main-inicio div .btn-wsp{
+    bottom: 30px;
+    z-index: 2;
+    margin-left: 90%;
+    position: fixed;
     filter: drop-shadow(1px 2px 8px gray)
+}
+
+.main-inicio div .btn-wsp:hover{
+    padding: 5px;
+    border-radius: 4px;
+    transition-duration: 0.3s ;
+}
+
+.main-inicio .sobre-dos{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 0.2fr 1fr 1fr ;
+    grid-template-areas:
+    "titulo-2  carrousel"
+    " texto-2  carrousel" 
+    " texto-2  carrousel"  ;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px gray;
+    margin: 50px;
+    margin-top: 7rem;
+
+}
+
+.main-inicio .sobre-dos h2{
+    grid-area: titulo-2;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 1.8rem;
+    margin-right: 2rem;
+    margin-left: 1.4rem;
+    color: #3e3e3ed8;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.main-inicio .sobre-dos p{
+    grid-area: texto-2;
+    font-family: 'Rubik', sans-serif;
+    padding: 1rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+.main-inicio .sobre-dos img{
+    grid-area: carrousel;
+    height: 23rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    padding: 20px;
+    margin-left: 10rem;
 }
 
 
@@ -232,5 +289,57 @@ header div .menu-pages ul{
     }
 
     /*** media queries inicio***/
+    header{
+        display: flex;
+        justify-content: start;
+    }
+
+    .main-inicio .sobre-nosotros-inicio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .main-inicio .sobre-nosotros-inicio .video{
+        height: 20rem;
+        width: 20rem;
+        margin-left: 13px;
+    }
+
+    .main-inicio .sobre-nosotros-inicio .texto-sobre{
+        width: auto;
+    }
+
+    .main-inicio a{
+        display: flex;
+        justify-content: end;
+        margin: 2.8rem;
+        position: fixed;
+        filter: drop-shadow(1px 2px 8px gray)
+    }
+
+    /**** Segundo cuadro "sobre nosotros" main****/
+
+    .main-inicio .sobre-dos{
+        display: none;
+    }
+
+    .main-inicio a img{
+        height: 3rem;
+        z-index: 3;
+    }
     
+
+    .footer-pages{
+        position: relative;
+        height: 2.5rem;
+    }
+    
+    .footer-pages .p1{
+        display: none;
+    }
+    .footer-pages .p2{
+        display: none;
+    }
 }
